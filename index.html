@@ -1,12 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Personal portfolio of Shashikala M Hiremath - Engineering Student and Aspiring Software Developer">
+          content="Portfolio of Shashikala M Hiremath - Engineering Student and Aspiring Software Developer">
 
     <title>Shashikala M Hiremath | Portfolio</title>
 
@@ -16,358 +15,551 @@
 <body>
 
     <!-- ================= HEADER ================= -->
+
     <header class="header">
+
         <nav class="navbar">
 
             <a href="#home" class="logo">
                 Shashikala<span>.</span>
             </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <div class="nav-wrapper">
+
+                <ul class="nav-links" id="nav-links">
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Dark / Light Mode -->
+                <button id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle dark and light mode">
+                    🌙
+                </button>
+
+            </div>
 
         </nav>
+
     </header>
 
 
     <!-- ================= HERO ================= -->
-    <section id="home" class="hero">
 
-        <div class="hero-container">
+    <main>
 
-            <div class="hero-content">
+        <section id="home" class="hero">
 
-                <p class="small-title">
-                    WELCOME TO MY PORTFOLIO
-                </p>
+            <div class="hero-container">
 
-                <h1>
-                    Hi, I'm
-                    <span>Shashikala M Hiremath</span>
-                </h1>
+                <div class="hero-content reveal">
 
-                <h2>
-                    Student & Aspiring Software Developer
-                </h2>
+                    <p class="small-title">
+                        WELCOME TO MY PORTFOLIO
+                    </p>
 
-                <p class="hero-description">
-                    I am passionate about programming, web development
-                    and learning new technologies. I enjoy creating
-                    creative and useful projects.
-                </p>
+                    <h1>
+                        Hi, I'm
+                        <span>Shashikala M Hiremath</span>
+                    </h1>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">
-                        View My Work
-                    </a>
+                    <h2>
+                        Student & Aspiring Software Developer
+                    </h2>
 
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Me
-                    </a>
+                    <p class="hero-description">
+                        I am passionate about programming, web development
+                        and learning new technologies. I enjoy creating
+                        creative and useful projects.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects"
+                           class="btn primary-btn">
+                            View My Work
+                        </a>
+
+                        <a href="#contact"
+                           class="btn secondary-btn">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image reveal">
+
+                    <div class="profile-card">
+
+                        <div class="profile-circle">
+                            SH
+                        </div>
+
+                        <h3>
+                            Shashikala M Hiremath
+                        </h3>
+
+                        <p>
+                            Engineering Student
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
 
+        </section>
 
-            <div class="hero-image">
 
-                <div class="profile-card">
+        <!-- ================= ABOUT ================= -->
 
-                    <div class="profile-circle">
-                        SH
-                    </div>
+        <section id="about" class="section">
 
-                    <h3>
-                        Shashikala M Hiremath
-                    </h3>
+            <div class="section-heading reveal">
+
+                <p>GET TO KNOW ME</p>
+
+                <h2>About Me</h2>
+
+            </div>
+
+
+            <div class="about-container">
+
+                <div class="about-text reveal">
+
+                    <h3>Hello! 👋</h3>
 
                     <p>
-                        Engineering Student
+                        I am Shashikala M Hiremath, an engineering student
+                        with an interest in technology, programming and
+                        web development.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technical skills and creating
+                        projects that help me improve my knowledge.
+                    </p>
+
+                    <p>
+                        My goal is to continuously develop my technical
+                        skills and build a successful career in the
+                        software industry.
+                    </p>
+
+                </div>
+
+
+                <div class="about-details">
+
+                    <div class="detail-box reveal">
+                        <h3>Education</h3>
+                        <p>Engineering Student</p>
+                    </div>
+
+                    <div class="detail-box reveal">
+                        <h3>Interest</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                    <div class="detail-box reveal">
+                        <h3>Career Goal</h3>
+                        <p>Software Developer</p>
+                    </div>
+
+                    <div class="detail-box reveal">
+                        <h3>Learning</h3>
+                        <p>Programming & Technology</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills"
+                 class="section skills-section">
+
+            <div class="section-heading reveal">
+
+                <p>WHAT I KNOW</p>
+
+                <h2>My Skills</h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        HTML
+                    </div>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        Creating structured and semantic web pages.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        CSS
+                    </div>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Designing responsive and attractive websites.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        JS
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Adding interactive features and functionality
+                        to websites.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        JAVA
+                    </div>
+
+                    <h3>Java</h3>
+
+                    <p>
+                        Learning object-oriented programming.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        PY
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Programming, logic building and problem solving.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">
+                        GIT
+                    </div>
+
+                    <h3>Git & GitHub</h3>
+
+                    <p>
+                        Managing and sharing software projects.
                     </p>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="section">
+        <!-- ================= PROJECTS ================= -->
 
-        <div class="section-heading">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
-        </div>
+        <section id="projects" class="section">
 
+            <div class="section-heading reveal">
 
-        <div class="about-container">
+                <p>MY WORK</p>
 
-            <div class="about-text">
-
-                <h3>Hello! 👋</h3>
-
-                <p>
-                    I am Shashikala M Hiremath, an engineering student
-                    with an interest in technology, programming and
-                    web development.
-                </p>
-
-                <p>
-                    I enjoy learning new technical skills and creating
-                    projects that help me improve my knowledge.
-                </p>
-
-                <p>
-                    My goal is to continuously develop my technical
-                    skills and build a successful career in the
-                    software industry.
-                </p>
+                <h2>Projects</h2>
 
             </div>
 
 
-            <div class="about-details">
+            <div class="projects-grid">
 
-                <div class="detail-box">
-                    <h3>Education</h3>
-                    <p>Engineering Student</p>
+                <div class="project-card reveal">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive personal portfolio website
+                        created using HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
                 </div>
 
-                <div class="detail-box">
-                    <h3>Interest</h3>
-                    <p>Web Development</p>
+
+                <div class="project-card reveal">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>Web Development Practice</h3>
+
+                    <p>
+                        Practice projects created to improve my
+                        web development and design skills.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
                 </div>
 
-                <div class="detail-box">
-                    <h3>Career Goal</h3>
-                    <p>Software Developer</p>
-                </div>
 
-                <div class="detail-box">
-                    <h3>Learning</h3>
-                    <p>Programming & Technology</p>
-                </div>
+                <div class="project-card reveal">
 
-            </div>
+                    <div class="project-number">
+                        03
+                    </div>
 
-        </div>
+                    <h3>Programming Projects</h3>
 
-    </section>
+                    <p>
+                        Small programming projects created while
+                        learning programming concepts.
+                    </p>
 
+                    <div class="project-tags">
 
-    <!-- ================= SKILLS ================= -->
-    <section id="skills" class="section skills-section">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>C</span>
 
-        <div class="section-heading">
-            <p>WHAT I KNOW</p>
-            <h2>My Skills</h2>
-        </div>
+                    </div>
 
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <div class="skill-icon">HTML</div>
-                <h3>HTML</h3>
-                <p>
-                    Creating structured and semantic web pages.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">CSS</div>
-                <h3>CSS</h3>
-                <p>
-                    Designing responsive and attractive websites.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">JAVA</div>
-                <h3>Java</h3>
-                <p>
-                    Learning object-oriented programming.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">PY</div>
-                <h3>Python</h3>
-                <p>
-                    Programming, logic building and problem solving.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">C</div>
-                <h3>C Programming</h3>
-                <p>
-                    Understanding programming fundamentals.
-                </p>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">GIT</div>
-                <h3>Git & GitHub</h3>
-                <p>
-                    Managing and sharing software projects.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="section">
-
-        <div class="section-heading">
-            <p>MY WORK</p>
-            <h2>Projects</h2>
-        </div>
-
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-
-                <div class="project-number">01</div>
-
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    A responsive personal portfolio website created
-                    using HTML and CSS.
-                </p>
-
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Responsive</span>
                 </div>
 
             </div>
 
+        </section>
 
-            <div class="project-card">
 
-                <div class="project-number">02</div>
+        <!-- ================= CONTACT ================= -->
 
-                <h3>Web Development Practice</h3>
+        <section id="contact"
+                 class="section contact-section">
 
-                <p>
-                    Practice projects created to improve my web
-                    development and design skills.
-                </p>
+            <div class="section-heading reveal">
 
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>UI Design</span>
-                </div>
+                <p>LET'S CONNECT</p>
+
+                <h2>Contact Me</h2>
 
             </div>
 
 
-            <div class="project-card">
+            <p class="contact-description reveal">
+                Have a question or want to connect?
+                Send me a message.
+            </p>
 
-                <div class="project-number">03</div>
 
-                <h3>Programming Projects</h3>
+            <div class="contact-container">
 
-                <p>
-                    Small programming projects created while
-                    learning programming concepts.
-                </p>
+                <!-- Contact Form -->
 
-                <div class="project-tags">
-                    <span>Java</span>
-                    <span>Python</span>
-                    <span>C</span>
+                <form id="contact-form"
+                      class="contact-form reveal"
+                      novalidate>
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Enter your name">
+
+                        <small class="error-message"
+                               id="name-error"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email">
+
+                        <small class="error-message"
+                               id="email-error"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Enter your message"></textarea>
+
+                        <small class="error-message"
+                               id="message-error"></small>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="btn primary-btn submit-btn">
+
+                        Send Message
+
+                    </button>
+
+
+                    <p id="form-success"
+                       class="success-message">
+                    </p>
+
+                </form>
+
+
+                <!-- Contact Details -->
+
+                <div class="contact-details reveal">
+
+                    <a href="mailto:shashikalamh07@gmail.com"
+                       class="contact-card">
+
+                        <h3>Email</h3>
+
+                        <p>
+                            shashikalamh07@gmail.com
+                        </p>
+
+                    </a>
+
+
+                    <a href="https://github.com/shashikalamh07-svg"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <h3>GitHub</h3>
+
+                        <p>
+                            shashikalamh07-svg
+                        </p>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/shashikala-hiremath-427709386/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-card">
+
+                        <h3>LinkedIn</h3>
+
+                        <p>
+                            My LinkedIn Profile
+                        </p>
+
+                    </a>
+
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section contact-section">
-
-        <div class="section-heading">
-            <p>LET'S CONNECT</p>
-            <h2>Contact Me</h2>
-        </div>
-
-        <p class="contact-description">
-            Feel free to connect with me through email,
-            GitHub or LinkedIn.
-        </p>
-
-
-        <div class="contact-container">
-
-            <a href="mailto:shashikalamh07@gmail.com"
-                class="contact-card">
-
-                <h3>Email</h3>
-
-                <p>
-                    shashikalamh07@gmail.com
-                </p>
-
-            </a>
-
-
-            <a href="https://github.com/shashikalamh07-svg"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card">
-
-                <h3>GitHub</h3>
-
-                <p>
-                    shashikalamh07-svg
-                </p>
-
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/shashikala-hiremath-427709386/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card">
-
-                <h3>LinkedIn</h3>
-
-                <p>
-                    My LinkedIn Profile
-                </p>
-
-            </a>
-
-        </div>
-
-    </section>
+    </main>
 
 
     <!-- ================= FOOTER ================= -->
+
     <footer>
 
         <p>
@@ -375,10 +567,14 @@
         </p>
 
         <p>
-            Designed & Built with HTML and CSS
+            Designed & Built with HTML, CSS & JavaScript
         </p>
 
     </footer>
 
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
-</html>
+ </html>
