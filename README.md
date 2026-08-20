@@ -1,453 +1,739 @@
-<!DOCTYPE html>
-<html lang="en">
+                /* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f7f9fc;
+    color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #111827;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 92vh;
+
+    background: linear-gradient(
+        135deg,
+        #eef5ff,
+        #ffffff
+    );
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 80px 30px;
 
-<head>
-    <meta charset="UTF-8">
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    gap: 60px;
+}
 
-    <meta name="description"
-          content="Portfolio of Shashikala M Hiremath">
+.hero-content {
+    max-width: 700px;
+}
 
-    <title>Shashikala M Hiremath | Portfolio</title>
+.small-title {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+.hero h1 {
+    font-size: clamp(38px, 6vw, 62px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
 
-<body>
+.hero h1 span {
+    color: #2563eb;
+}
 
-    <!-- Navigation -->
-    <header class="header">
+.hero h2 {
+    color: #4b5563;
+    font-size: clamp(20px, 3vw, 28px);
+    margin-bottom: 20px;
+}
 
-        <nav class="navbar">
+.hero-description {
+    max-width: 620px;
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 30px;
+}
 
-            <a href="#home" class="logo">
-                Shashikala<span>.</span>
-            </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+/* Buttons */
 
-        </nav>
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-    </header>
+.btn {
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
 
-        <div class="hero-container">
+.secondary-btn {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
 
-            <div class="hero-content">
+.secondary-btn:hover {
+    background: #2563eb;
+    color: white;
+}
 
-                <p class="small-title">
-                    WELCOME TO MY PORTFOLIO
-                </p>
 
-                <h1>
-                    Hi, I'm
-                    <span>Shashikala M Hiremath</span>
-                </h1>
+/* Profile */
 
-                <h2>
-                    Student & Aspiring Software Developer
-                </h2>
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-                <p class="hero-description">
-                    I am passionate about programming, web development
-                    and learning new technologies. I enjoy building
-                    creative and useful projects.
-                </p>
+.profile-card {
+    width: 300px;
 
-                <div class="hero-buttons">
+    background: white;
 
-                    <a href="#projects" class="btn primary-btn">
-                        View My Work
-                    </a>
+    padding: 35px;
 
-                    <a href="#contact" class="btn secondary-btn">
-                        Contact Me
-                    </a>
+    text-align: center;
 
-                </div>
+    border-radius: 20px;
 
-            </div>
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
 
+    animation: floating 3s ease-in-out infinite;
+}
 
-            <div class="hero-image">
+.profile-circle {
+    width: 190px;
+    height: 190px;
 
-                <div class="profile-card">
+    margin: auto;
+    margin-bottom: 20px;
 
-                    <div class="profile-circle">
-                        SH
-                    </div>
+    border-radius: 50%;
 
-                    <h3>
-                        Shashikala M Hiremath
-                    </h3>
+    background: #2563eb;
 
-                    <p>
-                        Engineering Student
-                    </p>
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-                </div>
+    color: white;
 
-            </div>
+    font-size: 55px;
+    font-weight: bold;
 
-        </div>
+    border: 8px solid #dbeafe;
+}
 
-    </section>
+.profile-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 
+.profile-card p {
+    color: #6b7280;
+}
 
-    <!-- About Section -->
-    <section id="about" class="section">
 
-        <div class="section-heading">
+/* Animation */
 
-            <p>GET TO KNOW ME</p>
+@keyframes floating {
 
-            <h2>About Me</h2>
+    0% {
+        transform: translateY(0);
+    }
 
-        </div>
+    50% {
+        transform: translateY(-10px);
+    }
 
+    100% {
+        transform: translateY(0);
+    }
+}
 
-        <div class="about-container">
 
-            <div class="about-text">
+/* =========================
+   COMMON SECTION
+========================= */
 
-                <h3>
-                    Hello! 👋
-                </h3>
+.section {
+    max-width: 1150px;
+    margin: auto;
 
-                <p>
-                    I am Shashikala M Hiremath, an engineering student
-                    with an interest in technology, programming and
-                    web development.
-                </p>
+    padding: 90px 30px;
+}
 
-                <p>
-                    I enjoy learning new technical skills and creating
-                    projects that help me improve my knowledge.
-                </p>
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-                <p>
-                    My goal is to continuously develop my technical
-                    skills and build a successful career in the
-                    software industry.
-                </p>
+.section-heading p {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
 
-            </div>
+.section-heading h2 {
+    font-size: 40px;
+    color: #111827;
+}
 
 
-            <div class="about-details">
+/* =========================
+   ABOUT
+========================= */
 
-                <div class="detail-box">
-                    <h3>Education</h3>
-                    <p>Engineering Student</p>
-                </div>
+.about-container {
+    display: grid;
 
-                <div class="detail-box">
-                    <h3>Interest</h3>
-                    <p>Web Development</p>
-                </div>
+    grid-template-columns:
+        1.5fr
+        1fr;
 
-                <div class="detail-box">
-                    <h3>Career Goal</h3>
-                    <p>Software Developer</p>
-                </div>
+    gap: 60px;
 
-                <div class="detail-box">
-                    <h3>Learning</h3>
-                    <p>Programming & Technology</p>
-                </div>
+    align-items: center;
+}
 
-            </div>
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
 
-        </div>
+.about-text p {
+    color: #4b5563;
+    margin-bottom: 18px;
+    font-size: 17px;
+}
 
-    </section>
+.about-details {
+    display: grid;
 
+    grid-template-columns: repeat(2, 1fr);
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+    gap: 20px;
+}
 
-        <div class="section-heading">
+.detail-box {
+    background: white;
 
-            <p>WHAT I KNOW</p>
+    padding: 25px;
 
-            <h2>My Skills</h2>
+    border-radius: 12px;
 
-        </div>
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
 
+    border-left: 4px solid #2563eb;
 
-        <div class="skills-grid">
+    transition: 0.3s;
+}
 
-            <div class="skill-card">
+.detail-box:hover {
+    transform: translateY(-5px);
+}
 
-                <div class="skill-icon">
-                    HTML
-                </div>
+.detail-box h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
 
-                <h3>HTML</h3>
+.detail-box p {
+    color: #6b7280;
+}
 
-                <p>
-                    Creating structured and semantic web pages.
-                </p>
 
-            </div>
+/* =========================
+   SKILLS
+========================= */
 
+.skills-section {
+    max-width: none;
 
-            <div class="skill-card">
+    background: #eef4ff;
+}
 
-                <div class="skill-icon">
-                    CSS
-                </div>
+.skills-section .section-heading,
+.skills-grid {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-                <h3>CSS</h3>
+.skills-grid {
+    display: grid;
 
-                <p>
-                    Designing responsive and attractive websites.
-                </p>
+    grid-template-columns:
+        repeat(3, 1fr);
 
-            </div>
+    gap: 25px;
+}
 
+.skill-card {
+    background: white;
 
-            <div class="skill-card">
+    padding: 35px 25px;
 
-                <div class="skill-icon">
-                    JAVA
-                </div>
+    border-radius: 15px;
 
-                <h3>Java</h3>
+    text-align: center;
 
-                <p>
-                    Learning object-oriented programming.
-                </p>
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
 
-            </div>
+    transition: 0.3s;
+}
 
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+}
 
-            <div class="skill-card">
+.skill-icon {
+    width: 70px;
+    height: 70px;
 
-                <div class="skill-icon">
-                    PY
-                </div>
+    margin: auto;
+    margin-bottom: 18px;
 
-                <h3>Python</h3>
+    border-radius: 50%;
 
-                <p>
-                    Programming, logic building and problem solving.
-                </p>
+    background: #dbeafe;
 
-            </div>
+    color: #2563eb;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-            <div class="skill-card">
+    font-weight: bold;
+    font-size: 14px;
+}
 
-                <div class="skill-icon">
-                    C
-                </div>
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+}
 
-                <h3>C Programming</h3>
+.skill-card p {
+    color: #6b7280;
+}
 
-                <p>
-                    Understanding programming fundamentals.
-                </p>
 
-            </div>
+/* =========================
+   PROJECTS
+========================= */
 
+.projects-grid {
+    display: grid;
 
-            <div class="skill-card">
+    grid-template-columns:
+        repeat(3, 1fr);
 
-                <div class="skill-icon">
-                    GIT
-                </div>
+    gap: 25px;
+}
 
-                <h3>Git & GitHub</h3>
+.project-card {
+    background: white;
 
-                <p>
-                    Managing and sharing software projects.
-                </p>
+    padding: 30px;
 
-            </div>
+    border-radius: 15px;
 
-        </div>
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
 
-    </section>
+    border-top: 4px solid #2563eb;
 
+    transition: 0.3s;
+}
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
+.project-card:hover {
+    transform: translateY(-8px);
+}
 
-        <div class="section-heading">
+.project-number {
+    color: #2563eb;
 
-            <p>MY WORK</p>
+    font-size: 18px;
 
-            <h2>Projects</h2>
+    font-weight: bold;
 
-        </div>
+    margin-bottom: 15px;
+}
 
+.project-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
 
-        <div class="projects-grid">
+.project-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
 
-            <div class="project-card">
+.project-tags {
+    display: flex;
 
-                <div class="project-number">
-                    01
-                </div>
+    flex-wrap: wrap;
 
-                <h3>
-                    Personal Portfolio
-                </h3>
+    gap: 8px;
+}
 
-                <p>
-                    A responsive personal portfolio website created
-                    using HTML and CSS.
-                </p>
+.project-tags span {
+    background: #dbeafe;
 
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Responsive</span>
-                </div>
+    color: #1d4ed8;
 
-            </div>
+    padding: 5px 10px;
 
+    border-radius: 20px;
 
-            <div class="project-card">
+    font-size: 12px;
 
-                <div class="project-number">
-                    02
-                </div>
+    font-weight: bold;
+}
 
-                <h3>
-                    Web Development Practice
-                </h3>
 
-                <p>
-                    Practice projects created to improve my
-                    web development and design skills.
-                </p>
+/* =========================
+   CONTACT
+========================= */
 
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>UI Design</span>
-                </div>
+.contact-section {
+    max-width: none;
 
-            </div>
+    background: #eef4ff;
 
+    text-align: center;
+}
 
-            <div class="project-card">
+.contact-section .section-heading,
+.contact-description,
+.contact-container {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-                <div class="project-number">
-                    03
-                </div>
+.contact-description {
+    color: #4b5563;
+    margin-bottom: 35px;
+}
 
-                <h3>
-                    Programming Projects
-                </h3>
+.contact-container {
+    display: grid;
 
-                <p>
-                    Small programming projects created while
-                    learning programming concepts.
-                </p>
+    grid-template-columns:
+        repeat(3, 1fr);
 
-                <div class="project-tags">
-                    <span>Java</span>
-                    <span>Python</span>
-                    <span>C</span>
-                </div>
+    gap: 25px;
+}
 
-            </div>
+.contact-card {
+    background: white;
 
-        </div>
+    padding: 30px;
 
-    </section>
+    border-radius: 12px;
 
+    color: #111827;
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
 
-        <div class="section-heading">
+    transition: 0.3s;
+}
 
-            <p>LET'S CONNECT</p>
+.contact-card:hover {
+    transform: translateY(-5px);
 
-            <h2>Contact Me</h2>
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
 
-        </div>
+.contact-card h3 {
+    color: #2563eb;
 
+    margin-bottom: 10px;
+}
 
-        <p class="contact-description">
-            Feel free to connect with me through email,
-            GitHub or LinkedIn.
-        </p>
+.contact-card p {
+    color: #6b7280;
 
+    word-break: break-word;
+}
 
-        <div class="contact-container">
 
-            <a href="mailto:shashikalamh07@gmail.com"
-               class="contact-card">
+/* =========================
+   FOOTER
+========================= */
 
-                <h3>Email</h3>
+footer {
+    background: #111827;
 
-                <p>
-                    shashikalamh07@gmail.com
-                </p>
+    color: white;
 
-            </a>
+    padding: 25px;
 
+    text-align: center;
+}
 
-            <a href="https://github.com/shashikalamh07-svg"
-               target="_blank"
-               class="contact-card">
+footer p {
+    margin: 5px;
+}
 
-                <h3>GitHub</h3>
 
-                <p>
-                    shashikalamh07-svg
-                </p>
+/* =========================
+   TABLET
+========================= */
 
-            </a>
+@media (max-width: 900px) {
 
+    .hero-container {
+        flex-direction: column;
 
-            <a href="https://www.linkedin.com/in/shashikala-hiremath-427709386/"
-               target="_blank"
-               class="contact-card">
+        text-align: center;
+    }
 
-                <h3>LinkedIn</h3>
+    .hero-content {
+        max-width: 750px;
+    }
 
-                <p>
-                    My LinkedIn Profile
-                </p>
+    .hero-buttons {
+        justify-content: center;
+    }
 
-            </a>
+    .about-container {
+        grid-template-columns: 1fr;
+    }
 
-        </div>
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
 
-    </section>
+    .contact-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
 
 
-    <!-- Footer -->
-    <footer>
+/* =========================
+   MOBILE
+========================= */
 
-        <p>
-            © 2026 Shashikala M Hiremath
-        </p>
+@media (max-width: 600px) {
 
-        <p>
-            Designed & Built with HTML and CSS
-        </p>
+    .navbar {
+        flex-direction: column;
 
-    </footer>
+        gap: 15px;
 
+        padding: 15px 20px;
+    }
 
-</body>
-</html>
-# Shashikala-M-Hiremath
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero-container {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .profile-card {
+        width: 250px;
+    }
+
+    .profile-circle {
+        width: 160px;
+        height: 160px;
+
+        font-size: 45px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .profile-card {
+        width: 220px;
+    }
+
+} 
