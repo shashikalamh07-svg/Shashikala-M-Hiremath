@@ -3,7 +3,7 @@
 ========================= */
 
 const menuToggle = document.getElementById("menu-toggle");
-const navWrapper = document.querySelector(".nav-wrapper");
+const navWrapper = document.getElementById("nav-wrapper");
 const navLinks = document.querySelectorAll(".nav-links a");
 
 menuToggle.addEventListener("click", function () {
@@ -11,17 +11,23 @@ menuToggle.addEventListener("click", function () {
     navWrapper.classList.toggle("active");
 
     if (navWrapper.classList.contains("active")) {
+
         menuToggle.textContent = "✕";
+
         menuToggle.setAttribute(
             "aria-label",
             "Close navigation menu"
         );
+
     } else {
+
         menuToggle.textContent = "☰";
+
         menuToggle.setAttribute(
             "aria-label",
             "Open navigation menu"
         );
+
     }
 
 });
@@ -205,8 +211,6 @@ contactForm.addEventListener("submit", function (event) {
     let isValid = true;
 
 
-    /* Name validation */
-
     if (nameInput.value.trim() === "") {
 
         nameError.textContent =
@@ -218,8 +222,6 @@ contactForm.addEventListener("submit", function (event) {
 
     }
 
-
-    /* Email validation */
 
     if (emailInput.value.trim() === "") {
 
@@ -242,8 +244,6 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    /* Message validation */
-
     if (messageInput.value.trim() === "") {
 
         messageError.textContent =
@@ -255,8 +255,6 @@ contactForm.addEventListener("submit", function (event) {
 
     }
 
-
-    /* Success */
 
     if (isValid) {
 
