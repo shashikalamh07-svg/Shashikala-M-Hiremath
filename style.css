@@ -44,13 +44,17 @@ textarea {
     position: sticky;
     top: 0;
     z-index: 1000;
+
     background: #111827;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
     max-width: 1150px;
     margin: auto;
+
     padding: 16px 30px;
 
     display: flex;
@@ -60,7 +64,9 @@ textarea {
 
 .logo {
     color: white;
+
     font-size: 25px;
+
     font-weight: bold;
 }
 
@@ -71,28 +77,26 @@ textarea {
 .nav-wrapper {
     display: flex;
     align-items: center;
+
     gap: 20px;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 22px;
 }
 
 .nav-links a {
     color: white;
+
     font-weight: 600;
+
     transition: 0.3s;
 }
 
 .nav-links a:hover {
     color: #60a5fa;
 }
-
-
-/* =========================
-   MENU BUTTON
-========================= */
 
 .menu-toggle {
     display: none;
@@ -101,19 +105,17 @@ textarea {
     border: none;
 
     color: white;
+
     font-size: 28px;
 
     cursor: pointer;
 }
 
-
-/* =========================
-   THEME BUTTON
-========================= */
-
 .theme-toggle {
     border: none;
+
     background: #374151;
+
     color: white;
 
     width: 42px;
@@ -127,7 +129,7 @@ textarea {
 }
 
 .theme-toggle:hover {
-    transform: rotate(20deg) scale(1.05);
+    transform: scale(1.1);
 }
 
 
@@ -138,11 +140,12 @@ textarea {
 .hero {
     min-height: 92vh;
 
-    background: linear-gradient(
-        135deg,
-        #eef5ff,
-        #ffffff
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #eef5ff,
+            #ffffff
+        );
 
     display: flex;
     align-items: center;
@@ -150,12 +153,17 @@ textarea {
 
 .hero-container {
     width: 100%;
+
     max-width: 1150px;
+
     margin: auto;
+
     padding: 80px 30px;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     gap: 60px;
@@ -167,15 +175,21 @@ textarea {
 
 .small-title {
     color: #2563eb;
+
     font-size: 14px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
+
     margin-bottom: 15px;
 }
 
 .hero h1 {
     font-size: clamp(38px, 6vw, 62px);
+
     line-height: 1.15;
+
     margin-bottom: 20px;
 }
 
@@ -185,27 +199,34 @@ textarea {
 
 .hero h2 {
     color: #4b5563;
+
     font-size: clamp(20px, 3vw, 28px);
+
     margin-bottom: 20px;
 }
 
 .hero-description {
     max-width: 620px;
+
     font-size: 18px;
+
     color: #4b5563;
+
     margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
 }
 
 
 /* =========================
    BUTTONS
 ========================= */
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
 
 .btn {
     display: inline-block;
@@ -223,22 +244,27 @@ textarea {
 
 .primary-btn {
     background: #2563eb;
+
     color: white;
+
     border: 2px solid #2563eb;
 }
 
 .primary-btn:hover {
     background: #1d4ed8;
+
     transform: translateY(-3px);
 }
 
 .secondary-btn {
     border: 2px solid #2563eb;
+
     color: #2563eb;
 }
 
 .secondary-btn:hover {
     background: #2563eb;
+
     color: white;
 }
 
@@ -249,7 +275,9 @@ textarea {
 
 .hero-image {
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
@@ -275,6 +303,7 @@ textarea {
     height: 190px;
 
     margin: auto;
+
     margin-bottom: 20px;
 
     border-radius: 50%;
@@ -282,12 +311,15 @@ textarea {
     background: #2563eb;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     color: white;
 
     font-size: 55px;
+
     font-weight: bold;
 
     border: 8px solid #dbeafe;
@@ -295,6 +327,7 @@ textarea {
 
 .profile-card h3 {
     font-size: 20px;
+
     margin-bottom: 5px;
 }
 
@@ -319,30 +352,38 @@ textarea {
 
 
 /* =========================
-   SECTIONS
+   COMMON SECTION
 ========================= */
 
 .section {
     max-width: 1150px;
+
     margin: auto;
+
     padding: 90px 30px;
 }
 
 .section-heading {
     text-align: center;
+
     margin-bottom: 50px;
 }
 
 .section-heading p {
     color: #2563eb;
+
     font-weight: bold;
+
     letter-spacing: 2px;
+
     font-size: 13px;
+
     margin-bottom: 8px;
 }
 
 .section-heading h2 {
     font-size: 40px;
+
     color: #111827;
 }
 
@@ -363,12 +404,15 @@ textarea {
 
 .about-text h3 {
     font-size: 28px;
+
     margin-bottom: 20px;
 }
 
 .about-text p {
     color: #4b5563;
+
     margin-bottom: 18px;
+
     font-size: 17px;
 }
 
@@ -401,6 +445,7 @@ textarea {
 
 .detail-box h3 {
     color: #2563eb;
+
     margin-bottom: 8px;
 }
 
@@ -410,11 +455,119 @@ textarea {
 
 
 /* =========================
+   EDUCATION
+========================= */
+
+.education-section {
+    background: #f0f6ff;
+
+    max-width: none;
+
+    padding-left: max(30px, calc((100% - 1090px) / 2));
+
+    padding-right: max(30px, calc((100% - 1090px) / 2));
+}
+
+.education-card {
+    max-width: 1090px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: flex-start;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #2563eb;
+}
+
+.education-icon {
+    font-size: 45px;
+
+    min-width: 65px;
+}
+
+.education-date {
+    display: inline-block;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.education-content h3 {
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+
+.education-content h4 {
+    color: #2563eb;
+
+    margin-bottom: 12px;
+}
+
+.education-content p {
+    color: #6b7280;
+}
+
+.resume-box {
+    max-width: 1090px;
+
+    margin: 30px auto 0;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.resume-box h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.resume-box p {
+    color: #6b7280;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
    SKILLS
 ========================= */
 
 .skills-section {
     max-width: none;
+
     background: #eef4ff;
 }
 
@@ -423,6 +576,7 @@ textarea {
     max-width: 1090px;
 
     margin-left: auto;
+
     margin-right: auto;
 }
 
@@ -461,23 +615,29 @@ textarea {
     height: 70px;
 
     margin: auto;
+
     margin-bottom: 18px;
 
     border-radius: 50%;
 
     background: #dbeafe;
+
     color: #2563eb;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     font-weight: bold;
+
     font-size: 14px;
 }
 
 .skill-card h3 {
     margin-bottom: 10px;
+
     font-size: 21px;
 }
 
@@ -490,12 +650,16 @@ textarea {
    PROJECTS
 ========================= */
 
+.projects-section {
+    background: #ffffff;
+}
+
 .projects-grid {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+    gap: 28px;
 }
 
 .project-card {
@@ -503,18 +667,33 @@ textarea {
 
     padding: 30px;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
     box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.07);
+        0 8px 25px rgba(0, 0, 0, 0.08);
 
-    border-top: 4px solid #2563eb;
+    border: 1px solid #e5e7eb;
 
-    transition: 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.13);
+}
+
+.project-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
 }
 
 .project-number {
@@ -523,28 +702,53 @@ textarea {
     font-size: 18px;
 
     font-weight: bold;
+}
+
+.project-status {
+    background: #dcfce7;
+
+    color: #15803d;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.project-icon {
+    font-size: 42px;
 
     margin-bottom: 15px;
 }
 
 .project-card h3 {
     font-size: 23px;
+
     margin-bottom: 15px;
 }
 
 .project-card p {
     color: #6b7280;
+
     margin-bottom: 20px;
 }
 
 .project-tags {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
+
+    margin-bottom: 25px;
 }
 
 .project-tags span {
     background: #dbeafe;
+
     color: #1d4ed8;
 
     padding: 5px 10px;
@@ -554,6 +758,44 @@ textarea {
     font-size: 12px;
 
     font-weight: bold;
+}
+
+.project-buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.project-btn {
+    flex: 1;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #2563eb;
+}
+
+.demo-btn {
+    background: #2563eb;
+}
+
+.demo-btn:hover {
+    background: #1d4ed8;
 }
 
 
@@ -575,6 +817,7 @@ textarea {
     max-width: 1090px;
 
     margin-left: auto;
+
     margin-right: auto;
 }
 
@@ -707,18 +950,17 @@ textarea {
 
 .contact-card:hover {
     transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .contact-card h3 {
     color: #2563eb;
+
     margin-bottom: 10px;
 }
 
 .contact-card p {
     color: #6b7280;
+
     word-break: break-word;
 }
 
@@ -769,15 +1011,17 @@ footer p {
 
 body.dark-mode {
     background: #111827;
+
     color: #f3f4f6;
 }
 
 body.dark-mode .hero {
-    background: linear-gradient(
-        135deg,
-        #111827,
-        #1f2937
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #1f2937
+        );
 }
 
 body.dark-mode .hero h2,
@@ -793,30 +1037,44 @@ body.dark-mode .section-heading h2 {
 
 body.dark-mode .profile-card,
 body.dark-mode .detail-box,
+body.dark-mode .education-card,
+body.dark-mode .resume-box,
 body.dark-mode .skill-card,
 body.dark-mode .project-card,
 body.dark-mode .contact-form,
 body.dark-mode .contact-card {
     background: #1f2937;
+
     color: #f3f4f6;
+
+    border-color: #374151;
 }
 
 body.dark-mode .detail-box p,
 body.dark-mode .skill-card p,
 body.dark-mode .project-card p,
-body.dark-mode .contact-card p {
+body.dark-mode .contact-card p,
+body.dark-mode .education-content p,
+body.dark-mode .resume-box p {
     color: #d1d5db;
 }
 
+body.dark-mode .education-section,
 body.dark-mode .skills-section,
 body.dark-mode .contact-section {
     background: #0f172a;
 }
 
+body.dark-mode .projects-section {
+    background: #111827;
+}
+
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
     background: #111827;
+
     color: white;
+
     border-color: #4b5563;
 }
 
@@ -827,6 +1085,7 @@ body.dark-mode .form-group textarea::placeholder {
 
 body.dark-mode .theme-toggle {
     background: #f3f4f6;
+
     color: #111827;
 }
 
@@ -880,6 +1139,7 @@ body.dark-mode .theme-toggle {
         position: absolute;
 
         top: 70px;
+
         left: 0;
 
         width: 100%;
@@ -911,6 +1171,14 @@ body.dark-mode .theme-toggle {
 
     .theme-toggle {
         align-self: center;
+    }
+
+    .education-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        align-items: center;
     }
 }
 
@@ -967,11 +1235,21 @@ body.dark-mode .theme-toggle {
 
     .hero-buttons {
         flex-direction: column;
+
         align-items: stretch;
     }
 
     .btn {
         text-align: center;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .education-section {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
