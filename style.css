@@ -15,3 +15,259 @@ body {
     background: #f7f9fc;
     color: #1f2937;
 }
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* =========================
+   THEME BUTTON
+========================= */
+
+.theme-toggle {
+    border: none;
+    background: #1f2937;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.error-message {
+    display: block;
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #16a34a;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.invalid {
+    border-color: #dc2626 !important;
+}
+
+.submit-btn {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    display: grid;
+    gap: 20px;
+    align-content: start;
+}
+
+.contact-card {
+    display: block;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    color: #111827;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #6b7280;
+    word-break: break-word;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+}
+
+body.dark-mode .section-heading h2,
+body.dark-mode .hero h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .hero-description,
+body.dark-mode .about-text p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .profile-card,
+body.dark-mode .detail-box,
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .contact-form,
+body.dark-mode .contact-card {
+    background: #1e293b;
+    color: #e5e7eb;
+}
+
+body.dark-mode .profile-card p,
+body.dark-mode .detail-box p,
+body.dark-mode .skill-card p,
+body.dark-mode .project-card p,
+body.dark-mode .contact-card p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .skills-section,
+body.dark-mode .contact-section {
+    background: #111827;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background: #0f172a;
+    color: white;
+    border-color: #475569;
+}
+
+
+/* =========================
+   MOBILE MODULE 3
+========================= */
+
+@media (max-width: 700px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-wrapper {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-wrapper.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .theme-toggle {
+        margin-bottom: 10px;
+    }
+}
